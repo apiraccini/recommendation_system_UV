@@ -20,19 +20,10 @@ Parameters:
   - nperturb: Number of perturbations to be carried out
   - init: string indicating the array initialization method for U and V: 'ones' (default) initializes U and V by assigning 1 on each entry, 'mean' initializes them so that the matrix estimated starting has each income equal to the average of entries of the starting matrix, 'meanrow' and 'meancol' initialize U and V so that the starting estimated matrix has row (or column) values equal to row averages (or column) of the initial utility matrix
   - method: string indicating the perturbation method to be adopted: 'n' (default) uses a standard normal distribution, 'u' uses a uniform distribution defined from -1 to 1
-These odules are meant to be imported from a main module which use the gradient descent function contained in it, for using them individually they must be launched from the command line. In this case the function is performed on a dummy 5 * 5 matrix saved in the L.txt file inside the compressed folder and on a randomly created matrix with a fixed share of empty revenue per row, equal to approximately 25% of revenue.
+ 
+These modules are meant to be imported from a main module which use the gradient descent function contained in it, for using them individually they must be launched from the command line. In this case the function is performed on a dummy 5 * 5 matrix saved in the L.txt file inside the compressed folder and on a randomly created matrix with a fixed share of empty revenue per row, equal to approximately 25% of revenue.
 Functions are to be used as follows:
   - usage: GDmat.py [-h] [--path PATH] -d D [-eta ETA] [-n N] [-p P] [-perturb PERTURB] [-nperturb NPERTURB] [-init INIT] [-method METHOD] (In the same way using SGD.py or SGD2.py)
-  - optional arguments:
-    -h, --help show this help message and exit
-    --path PATH path to the file containing the 5 * 5 test matrix
-    -d D number of latent dimensions
-    -eta ETA learning rate of the GD algorithm (default = 0.005)
-    -n N number of rows of the random test matrix (default = 10)
-    -p P number of columns in the random test matrix (default = 20)
-    -perturb PERTURB do you want to perform a perturbation of the initial U and V matrices? (default = False)
-    -nperturb NPERTURB number of perturbations if perturb == True (default = 3)
-    -init INIT method of initialization of matrices U and V (default = 'ones', alternative = 'mean')
-    -method METHOD perturbation method of matrices U and V (default = 'n', alternative = 'u')
+  - optional arguments: -h, --help show this help message and exit, --path PATH path to the file containing the 5 * 5 test matrix, -d D number of latent dimensions, -eta ETA learning rate of the GD algorithm (default = 0.005), -n N number of rows of the random test matrix (default = 10), -p P number of columns in the random test matrix (default = 20), -perturb PERTURB do you want to perform a perturbation of the initial U and V matrices? (default = False), -nperturb NPERTURB number of perturbations if perturb == True (default = 3), -init INIT method of initialization of matrices U and V (default = 'ones', alternative = 'mean'), -method METHOD perturbation method of matrices U and V (default = 'n', alternative = 'u').
 
 - search_for_d_GD.py, search_for_d_SGD.py, search_for_d_SGD2.py (search_for_d_GD.txt, search_for_d_SGD.txt, search_for_d_SGD2.txt):  DO NOT RUN - computationally burdensome. The code output is saved in the corresponding files search_for_d_GD.txt, search_for_d_SGD.txt, search_for_d_SGD2.txt. The modules create the utility matrix corresponding to the user_song dataset using the create_utility_matrix function, they subsequently perform the estimate of empty entries by UV decomposition for each dimension 2 to 6 (with three perturbations and using the default methods for initialization and perturbation). Each module corresponds to one of the three gradient descent algorithms considered, and for each in a text file the results are reported (for each dimension) related to RMSE, percentage of correct classification, average number of iterations and overall execution time. The goal of this analysis is to heuristically identify the best value of d to be used in the final analys.
