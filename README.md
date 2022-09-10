@@ -2,7 +2,7 @@
 
 ## English description
 
-This repository contains the project for the course Informatical Methods for Statistics and Data Science, where we built a recommendation system using UV decomposition. The group was composed by myself and my University colleagues Matteo Gasparin and Pietro Scanzi (@pietroscanzi).
+This repository contains the project for the course Informatical Methods for Statistics and Data Science, where we built a recommendation system using UV decomposition. The group was composed by myself and my University colleagues Matteo Gasparin and [Pietro Scanzi](https://github.com/pietroscanzi).
 
 In the present work we try to apply the theory of recommendation systems to real data, consisting of music ratings available on the Yahoo! platform. The utility matrix is estimated through UV decomposition, following different methods of gradient descent, specifically enriched with additional features to insert a form of control over the high sparsity rate of the matrix. The techniques proposed and implemented lead to the same conclusions from an efficacy point of view, while presenting, among the considerable variations, significant differences in efficiency.
 
@@ -36,6 +36,6 @@ Parameters:
 
 ## Italian description
 
-Questa repository contiene il progetto per il corso Metodi Informatici per la Statistica ed il Data Science, dove abbiamo costruito un sistema di raccomandazione utilizzando la decomposizione UV. Il gruppo era composto da me e i miei colleghi di Università Matteo Gasparin and Pietro Scanzi (@pietroscanzi).
+Questa repository contiene il progetto per il corso Metodi Informatici per la Statistica ed il Data Science, dove abbiamo costruito un sistema di raccomandazione utilizzando la decomposizione UV. Il gruppo era composto da me e i miei colleghi di Università Matteo Gasparin and [Pietro Scanzi](https://github.com/pietroscanzi).
 
 Nel presente lavoro cerchiamo di applicare la teoria dei sistemi di raccomandazione a dati reali, costituiti da valutazioni musicali disponibili sulla piattaforma Yahoo!. La matrice di utilità viene stimata attraverso la decomposizione UV, seguendo diverse modalità di discesa del gradiente, specificamente arricchite di funzionalità aggiuntive per inserire una forma di controllo sull'alto tasso di sparsità della matrice. Le tecniche proposte e implementate portano alle stesse conclusioni dal punto di vista dell'efficacia, pur presentando, tra le diverse varianti, significative differenze di efficienza.
