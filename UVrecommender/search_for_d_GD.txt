@@ -1,0 +1,8 @@
+Analisi delle prestazioni di GD (eta = 0.0001, 3 perturbazioni secondo una distribuzione normale standard) sul dataset user_song in base al numero di dimensioni latenti
+
+Dimensione	RMSE		classificazione		iterazioni	tempo totale
+2		1.21052		30%			304		4:08:17.768733
+3		1.39653		24%			207		2:49:45.788106
+4		1.35814		25%			216		2:59:51.644050
+5		1.20725		30%			311		4:14:48.796556
+6		1.20589		30%			311		4:17:17.438479

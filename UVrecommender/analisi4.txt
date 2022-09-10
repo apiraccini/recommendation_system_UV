@@ -1,0 +1,32 @@
+Stima di valori mancanti all'interno della matrice di utilita' corrispondente 
+al dataset user_song, mediante l'utilizzo di tre diversi algoritmi di discesa del 
+gradiente e in base a diverse combinazioni di parametri opzionali degli algoritmi
+
+Matrice di utilità (n*p) con n = 15400 users e p = 1000 canzoni
+Percentuale di rating non assegnati : 100 %
+
+Numero di dimensioni latenti pari a 2 individuato euristicamente utilizzando il 
+modulo search_for_d.py; numero di perturbazioni pari a 3 funzionale a dimensione 
+dataset, valori di eta per le tre procedure individuati euristicamente
+
+
+Analisi 4: inizializzazione di U e V con valori tutti pari a 1, senza perturbazioni di 
+U e V inizializzate
+Algoritmo	RMSE		classificazione		iterazioni	tempo totale
+GD		1.21075		27%			122		0:33:55.846600
+SGD		1.22208		26%			134		0:26:58.676156
+SGD2		1.25677		24%			154		0:19:14.532792
+
+Analisi 4a: inizializzazione di U e V con valori tutti pari a 1, con 2 perturbazioni 
+(secondo una distribuzione normale standard) delle matrici U e V inizializzate
+Algoritmo	RMSE		classificazione		iterazioni	tempo totale
+GD		1.19959		31%			304		4:03:47.039679
+SGD		1.20866		30%			344		3:29:58.009398
+SGD2		1.26125		28%			401		2:20:03.038782
+
+Analisi 4b: inizializzazione di U e V con valori tutti pari a 1, con 2 perturbazioni 
+(secondo una distribuzione uniforme tra -1 e 1) delle matrici U e V inizializzate
+Algoritmo	RMSE		classificazione		iterazioni	tempo totale
+GD		1.19705		30%			203		2:36:14.139505
+SGD		1.20656		29%			228		2:16:22.004504
+SGD2		1.24266		27%			271		1:33:01.125291

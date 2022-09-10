@@ -1,0 +1,8 @@
+Analisi delle prestazioni di SGD2 (eta = 0.0005, 3 perturbazioni secondo una distribuzione normale standard) sul dataset user_song in base al numero di dimensioni latenti
+
+Dimensione	RMSE		classificazione		iterazioni	tempo totale
+2		1.29235		26%			373		2:20:39.698314
+3		1.29803		26%			360		2:15:15.623550
+4		1.2884		26%			375		2:18:54.652065
+5		1.29794		26%			361		2:11:49.886035
+6		1.29167		27%			370		2:13:53.187824

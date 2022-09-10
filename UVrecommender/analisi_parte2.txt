@@ -1,0 +1,2 @@
+Algoritmo	RMSE		classificazione		iterazioni	tempo totale
+SGD2		1.23182		27%			270		2:30:40.189955
