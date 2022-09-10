@@ -20,7 +20,6 @@ Parameters:
   - nperturb: Number of perturbations to be carried out
   - init: string indicating the array initialization method for U and V: 'ones' (default) initializes U and V by assigning 1 on each entry, 'mean' initializes them so that the matrix estimated starting has each income equal to the average of entries of the starting matrix, 'meanrow' and 'meancol' initialize U and V so that the starting estimated matrix has row (or column) values equal to row averages (or column) of the initial utility matrix
   - method: string indicating the perturbation method to be adopted: 'n' (default) uses a standard normal distribution, 'u' uses a uniform distribution defined from -1 to 1
- 
 These modules are meant to be imported from a main module which use the gradient descent function contained in it, for using them individually they must be launched from the command line. In this case the function is performed on a dummy 5 * 5 matrix saved in the L.txt file inside the compressed folder and on a randomly created matrix with a fixed share of empty revenue per row, equal to approximately 25% of revenue.
 Functions are to be used as follows:
   - usage: GDmat.py [-h] [--path PATH] -d D [-eta ETA] [-n N] [-p P] [-perturb PERTURB] [-nperturb NPERTURB] [-init INIT] [-method METHOD] (In the same way using SGD.py or SGD2.py)
