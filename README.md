@@ -1,5 +1,3 @@
-# recommendation_system_UV
-
 ## English description
 
 This repository contains the project for the course Informatical Methods for Statistics and Data Science, where we built a recommendation system using UV decomposition. The group was composed by myself and my University colleagues Matteo Gasparin and [Pietro Scanzi](https://github.com/pietroscanzi).
